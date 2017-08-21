@@ -12,11 +12,11 @@ let routerMode = 'history';
 let imgBaseUrl = 'http://images.cangdu.org/';
 
 
-if (process.env.NODE_ENV == 'development') {
+if (process.env.NODE_ENV == 'development') { // 开发环境
 
 }else if(process.env.NODE_ENV == 'production'){
 
-	// baseUrl = 'http://cangdu.org:8001';
+	// baseUrl = 'http://cangdu.org:8001'; // 生产环境
 }
 
 export {

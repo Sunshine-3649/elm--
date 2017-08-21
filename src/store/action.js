@@ -8,7 +8,7 @@ import {
 } from './mutation-types.js'
 
 export default {
-
+	// 获取用户信息
 	async getUserInfo({
 		commit,
 		state
@@ -16,6 +16,7 @@ export default {
 		let res = await getUser();
 		commit(GET_USERINFO, res)
 	},
+	// 保存地址
 	async saveAddress({
 		commit,
 		state

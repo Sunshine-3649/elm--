@@ -13,7 +13,7 @@ export default async(url = '', data = {}, type = 'GET', method = 'fetch') => {
 		})
 
 		if (dataStr !== '') {
-			dataStr = dataStr.substr(0, dataStr.lastIndexOf('&'));
+			dataStr = dataStr.substr(0, dataStr.lastIndexOf('&')); // 截取字符串长度，去掉最后一个&
 			url = url + '?' + dataStr;
 		}
 	}
